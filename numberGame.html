@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nick's Number Game</title>
+  </head>
+  <body>
+    <h1>Nick's Number Game</h1>
+    <h4>Check below to see how you did!</h4>
+       Your number:
+      <p id="player"></p>
+       Computer's number:
+      <p id="computer"></p>
+      <p id="result"></p>
+    <h3>Play again by reloading the page!</h3>
+
+    <script>
+      var playerNumber = prompt("Pick a Number Between 1 and 5");
+      document.getElementById("player").innerHTML= playerNumber;
+     var randomNumber = Math.round(Math.random()*4 + 1);
+      document.getElementById("computer").innerHTML= randomNumber;
+      if (playerNumber > 0 & playerNumber < 6) {
+      if (playerNumber == randomNumber) {
+        document.getElementById("result").innerHTML = "YOU WON!!! Try your luck again."
+      } else {
+       document.getElementById("result").innerHTML = "Whoops! Better luck next time!"
+        }
+     } else {
+    document.getElementById("result").innerHTML= "You lost because you entered a number that wasn't between 1 and 5! Read the directions for a better result."
+    }
+    </script>
+  </body>
+
+</html>
