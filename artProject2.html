@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Nick's Art Project</title>
+  </head>
+  <body style = "background-color: green">
+    <canvas id="myCanvas"></canvas>
+    
+    <script>
+    
+      var x = 0;
+      var y = 0;
+      var maxX = parseInt(prompt("What is your maximum width?"));
+      var maxY = parseInt(prompt("What is your maximum height"));
+      
+      var canvas = document.getElementById("myCanvas"); //background rectangle
+      canvas.width = maxX;
+      canvas.height = maxY;
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "black";
+      ctx.fillRect(x,y,maxX,maxY);
+        
+      //white rectangles
+      ctx.beginPath() //top left
+      ctx.fillStyle = "white";
+      ctx.fillRect(x,y,maxX * .25,maxY * .25 + maxY * .1);
+      
+      ctx.beginPath() //middle left
+      ctx.fillStyle = "white";
+      ctx.fillRect(x,maxY * .25 + maxY * .125,maxX * .25,maxY * .25 + maxY * .1);
+      
+      ctx.beginPath() //big bottom right
+      ctx.fillStyle = "white";
+      ctx.fillRect(maxX * .275,maxY * .75,maxX * .65,maxY * .25);
+      
+      ctx.beginPath() //small bottom right
+      ctx.fillStyle = "white";
+      ctx.fillRect(maxX * .95,maxY * .75,maxX * .05,maxY * .1125);
+      
+      ctx.beginPath() //top right red
+      ctx.fillStyle = "red";
+      ctx.fillRect(maxX * .275,y,maxX * .725,maxY * .725);
+      
+      ctx.beginPath() //bottom left blue
+      ctx.fillStyle = "blue";
+      ctx.fillRect(x,maxY * .75,maxX * .25,maxY *.25);
+      
+      ctx.beginPath() //bottom right yellow
+      ctx.fillStyle = "yellow";
+      ctx.fillRect(maxX * .95,maxY * .8875,maxX * .05,maxY * .1125);
+      
+    </script>
+  </body>
+</html>
