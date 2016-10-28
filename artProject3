@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body style = "background-color: sky blue">
+    <canvas id="myCanvas" width="400" height="450" style="border: 1px solid black"></canvas>
+    
+    <script>
+      var canvas = document.getElementById("myCanvas"); //background grass
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.fillStyle = "green";
+      ctx.fillRect(0,275,400,175);
+      ctx.beginPath(); //background sky
+      ctx.fillStyle = "skyblue";
+      ctx.fillRect(0,0,400,275)
+      
+      
+        ctx.beginPath()//left leg
+        ctx.fillStyle = "#faebd7";
+        ctx.fillRect(175,250,15,150);
+          ctx.beginPath() //left shoe
+          ctx.fillStyle = "grey";
+          ctx.fillRect(150,380,40,20);
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(155,380);
+            ctx.lineTo(155,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(160,380);
+            ctx.lineTo(160,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(165,380);
+            ctx.lineTo(165,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(170,380);
+            ctx.lineTo(170,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(175,380);
+            ctx.lineTo(175,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(180,380);
+            ctx.lineTo(180,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(185,380);
+            ctx.lineTo(185,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+        
+        
+        ctx.beginPath() //right leg
+        ctx.fillStyle = "#faebd7";
+        ctx.fillRect(220,250,15,150);
+          ctx.beginPath() //right shoe
+          ctx.fillStyle = "grey";
+          ctx.fillRect(220,380,40,20);
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(230,380);
+            ctx.lineTo(230,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(235,380);
+            ctx.lineTo(235,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(240,380);
+            ctx.lineTo(240,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(245,380);
+            ctx.lineTo(245,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(250,380);
+            ctx.lineTo(250,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(255,380);
+            ctx.lineTo(255,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.beginPath() //design on shoes
+            ctx.moveTo(260,380);
+            ctx.lineTo(260,400);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            
+            
+            
+        ctx.beginPath() //pants
+        ctx.fillStyle = "white";
+        ctx.fillRect(160,230,40,90);//left
+        ctx.beginPath()
+        ctx.fillStyle = "white";
+        ctx.fillRect(200,230,50,45);//top
+        ctx.beginPath()
+        ctx.fillStyle = "white";
+        ctx.fillRect(210,230,40,90);//right
+          ctx.beginPath() //zipper
+          ctx.moveTo(205,230);
+          ctx.lineTo(205,250);
+          ctx.strokeStyle = "black";
+          ctx.stroke();
+        
+        
+        ctx.beginPath() //main part of shirt
+        ctx.fillStyle = "black";
+        ctx.fillRect(160,130,90,100);
+        ctx.beginPath() //right sleeve
+        ctx.fillStyle = "black";
+        ctx.fillRect(250,130,30,30);
+        ctx.beginPath() //left sleeve
+        ctx.fillStyle = "black";
+        ctx.fillRect(130,130,30,30);
+        
+          ctx.beginPath() //staff
+          ctx.moveTo(45,90);
+          ctx.lineTo(45,400);
+          ctx.strokeStyle = "gold";
+          ctx.stroke();
+            ctx.beginPath() //circle
+            ctx.arc(45, 95, 25, 0, 2 * Math.PI);
+            ctx.strokeStyle = "gold";
+            ctx.fillStyle = "gold";
+            ctx.fill();
+            ctx.stroke();
+            ctx.beginPath() //rectangle
+            ctx.fillStyle = "red";
+            ctx.fillRect(30,120,30,10);
+              ctx.beginPath() //gold circle on top
+              ctx.arc(45, 73, 15, 0, 2 * Math.PI);
+              ctx.strokeStyle = "gold";
+              ctx.fillStyle = "gold";
+              ctx.fill();
+              ctx.stroke();
+                ctx.beginPath() //gold circle on top of second gold
+                ctx.arc(45, 60, 10, 0, 2 * Math.PI);
+                ctx.strokeStyle = "gold";
+                ctx.fillStyle = "gold";
+                ctx.fill();
+                ctx.stroke();
+                  ctx.beginPath() // purple circle
+                  ctx.arc(30, 105, 5, 0, 2 * Math.PI);
+                  ctx.strokeStyle = "purple";
+                  ctx.fillStyle = "purple";
+                  ctx.fill();
+                  ctx.stroke();
+                  ctx.beginPath() // purple circle
+                  ctx.arc(45, 105, 5, 0, 2 * Math.PI);
+                  ctx.strokeStyle = "purple";
+                  ctx.fillStyle = "purple";
+                  ctx.fill();
+                  ctx.stroke();
+                  ctx.beginPath() // purple circle
+                  ctx.arc(60, 105, 5, 0, 2 * Math.PI);
+                  ctx.strokeStyle = "purple";
+                  ctx.fillStyle = "purple";
+                  ctx.fill();
+                  ctx.stroke();
+  
+        ctx.beginPath() //right arm
+        ctx.fillStyle = "#faebd7";
+        ctx.fillRect(260,160,20,75);
+          ctx.beginPath();
+          ctx.arc(270, 246, 15, 0, 2 * Math.PI);//right hand
+          ctx.strokeStyle = "#faebd7";
+          ctx.fillStyle = "#faebd7";
+          ctx.fill();
+          ctx.stroke();
+
+        ctx.beginPath() //left arm
+        ctx.fillStyle = "#faebd7";
+        ctx.fillRect(55,135,75,20);
+          ctx.beginPath();
+          ctx.arc(44, 145, 15, 0, 2 * Math.PI);//left hand
+          ctx.strokeStyle = "#faebd7";
+          ctx.fillStyle = "#faebd7";
+          ctx.fill();
+          ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.arc(205, 80, 45, 0, 2 * Math.PI);//head
+        ctx.strokeStyle = "#faebd7";
+        ctx.fillStyle = "#faebd7";
+        ctx.fill();
+        ctx.stroke();
+          ctx.beginPath(); //neck
+          ctx.fillStyle = "#faebd7";
+          ctx.fillRect(190,123,30,7)
+          
+          
+          ctx.beginPath();//right eye
+          ctx.arc(220, 75, 7, 0, 2 * Math.PI);
+          ctx.strokeStyle = "black";
+          ctx.fillStyle = "white";
+          ctx.fill();
+          ctx.stroke();
+            ctx.beginPath();//right eye pupil
+            ctx.arc(220, 75, 1, 0, 2 * Math.PI);
+            ctx.strokeStyle = "green";
+            ctx.stroke();
+              ctx.beginPath() //right eye eyebrow
+              ctx.fillStyle = "black";
+              ctx.fillRect(214,63,12,2);
+          
+          ctx.beginPath();//left eye
+          ctx.arc(190, 75, 7, 0, 2 * Math.PI);
+          ctx.strokeStyle = "black";
+          ctx.fillStyle = "white";
+          ctx.fill();
+          ctx.stroke();
+            ctx.beginPath();//left eye pupil
+            ctx.arc(190, 75, 1, 0, 2 * Math.PI);
+            ctx.strokeStyle = "green";
+            ctx.stroke();
+              ctx.beginPath() //right eye eyebrow
+              ctx.fillStyle = "black";
+              ctx.fillRect(184,63,12,2);
+            
+          ctx.beginPath();//mouth
+          ctx.arc(205, 100, 10, 0, 1 * Math.PI);
+          ctx.strokeStyle = "red";
+          ctx.stroke();
+          
+      ctx.beginPath(); //bird
+      ctx.arc(335, 90, 10, 0, 2 * Math.PI);
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(355, 90, 10, 0, 2 * Math.PI);
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+        ctx.beginPath() //cover the bird
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(320,88,50,15);
+        
+      ctx.beginPath(); //smaller bird
+      ctx.arc(350, 105, 8, 0, 2 * Math.PI);
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(366, 105, 8, 0, 2 * Math.PI);
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+        ctx.beginPath() //cover the bird
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(337,104,40,15);
+        
+      ctx.beginPath() //cloud
+      ctx.arc(125, 50, 15, 0, 2 * Math.PI);
+      ctx.strokeStyle = "white";
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.stroke();
+      ctx.beginPath() //cloud
+      ctx.arc(105, 50, 15, 0, 2 * Math.PI);
+      ctx.strokeStyle = "white";
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.stroke();
+      ctx.beginPath() //cloud
+      ctx.arc(115, 30, 15, 0, 2 * Math.PI);
+      ctx.strokeStyle = "white";
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.stroke();
+      ctx.beginPath() //cloud
+      ctx.arc(95, 30, 15, 0, 2 * Math.PI);
+      ctx.strokeStyle = "white";
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.stroke();
+      ctx.beginPath() //circle
+      ctx.arc(85, 50, 15, 0, 2 * Math.PI);
+      ctx.strokeStyle = "white";
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.stroke();
+      ctx.beginPath() //circle
+      ctx.arc(135, 32, 15, 0, 2 * Math.PI);
+      ctx.strokeStyle = "white";
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.stroke();
+      
+      
+    </script>
+  </body>
+</html>
